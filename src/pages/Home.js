@@ -105,14 +105,10 @@ const Home = () => {
                                 }
                             </>}
                     </div>
-                    <p className="py-6 text-xl font-normal leading-normal mt-0 mb-2">
-                        <div class="grid gap-6 mb-6 md:grid-cols-2">
-                            <div>
-                                <label for="first_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Receiver Address</label>
-                                <input type="text" value={toAddress} onChange={handleAddressChange} id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Wallet Address" required/>
-                                <button className="btn btn-sm btn-info ml-3 normal-case" onClick={handleTransferNFT}>Transfer</button>
-                            </div>
-                        </div>
+                    <p className="flex flex-col items-center gap-2">
+                        <label for="first_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Receiver Address</label>
+                        <input type="text" value={toAddress} onChange={handleAddressChange} id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Wallet Address" required/>
+                        <button className="btn btn-sm btn-info ml-3 normal-case" onClick={handleTransferNFT}>Transfer</button>
                     </p>
                     {/* <div className="flex flex-col items-center pt-[5%] gap-2">
                         <button onClick={handleMint} className="bg-red-500 text-white px-4 py-2 rounded-lg">Mint your own NFT</button>
